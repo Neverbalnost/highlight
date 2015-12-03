@@ -1,0 +1,129 @@
+* {
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    padding: .25em 0;
+    margin: .25em 0;
+    border-bottom: 1px solid 
+}
+
+h2 {
+    font-size: 1.25em;
+    font-style: italic;
+    margin: .25em 0;
+}
+
+#page-wrapper {
+    width:80%;
+    position: relative;
+    margin: 15px auto;
+}
+
+#contextMenu {
+    background: #333;
+    color: #fefefe;
+    padding: 15px;
+    border-radius: 5px;
+    position:absolute;
+    display:none;
+}
+
+#contextMenu:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 7.5px 10px 7.5px;
+    border-color: transparent transparent #333333 transparent;
+}
+
+article {
+    float:left;
+    width:80%;
+    margin:auto;
+    line-height: 1.5em
+}
+
+.selectedText {
+    background: #b2ed8b;
+}
+
+/* .selectedText:after {
+    content: "You highlighted this passage.";
+    position: absolute;
+    left:82%;
+    font-size: .7em;
+    opacity: 0.8
+} */
+
+.button {
+    font-size: 3em;
+    display: inline-block;
+    margin:0 .8em 0 0;
+    cursor: pointer;
+}
+
+.button.comment {
+    margin:0;
+}
+
+#commentArea {
+    background: #333;
+    color: #fefefe;    
+    position: absolute;
+    display: none;
+    left:82%;
+    width: 18%;
+    font-size: .7em;
+    border-radius: 5px;
+    padding:15px;
+    z-index: 2;
+}
+
+#commentSubmit {
+    display: block;
+    background: #fff;
+    border:0;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-top:10px
+}
+
+#commentSubmit:hover {
+    background: #b2ed8b;
+}
+
+.saved-comment,
+.saved-highlight {
+    position: absolute;
+    font-size: .7em;
+    opacity: 0.8;
+    left:82%;
+    width: 18%;
+}
+
+.delete-button.icon-square-cross {
+    font-size: 1.6em;
+    line-height: 22px;
+    float: left;
+    margin-left: 5px;
+    cursor:pointer;
+}
+
+.delete-button:hover {
+    color: #FF6699;
+}
+
+.comment-text {
+    float: left;
+    width: calc(100% - 24px);
+}
